@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
-    <script type="text/javascript">
-        function updateQRCode() {
-            var textField = document.getElementById('textInput').value;
-            var qrImage = document.getElementById('qrCode');
-            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(textField) + "&size=100x100";
-        }
-    </script>
-</head>
 <body>
     <h1>QR Code Generator</h1>
     <input type="text" id="textInput" onkeyup="updateQRCode()" placeholder="Enter text here">
